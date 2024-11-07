@@ -1,0 +1,22 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(250, 248, 250);
+        }
+    </style>
+    <h1 style = "background-color: rgb(186, 150, 183);"> Last Day of Class Countdown!</h1>
+    <body>
+        This is a basic app to count down the days until the <b> last day of class </b>
+        <a href = "https://www.unb.ca/secretariat/academic-governance/academic-dates/undergraduate-dates2425.html"> 
+            Click here for a link to the academic calendar </a href>
+    </body>
+    <h2 style = "background-color: rgb(186, 150, 183);"> See the Timer below</h2>
+    <h3 id = "display"></h3>
+    <script> 
+        var countDownDate = new Date("December 7, 2024 0:00:00").getTime();
+        var currentDate = new Date().getTime();
+        var distance = countDownDate - currentDate;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        document.getElementById("display").innerHTML = days + "";
+    </script>
+</html>
